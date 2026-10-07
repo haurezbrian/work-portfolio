@@ -1,26 +1,23 @@
 # Afri Roofing and Flooring
 
-A WordPress business website with a product catalogue, quotation selections and documentation for the site owner.
+A WordPress business website with a product catalogue, quotation selections and an owner editing guide.
 
-**Role:** Website implementation, catalogue configuration and owner handover documentation  
-**Stack:** WordPress, Elementor, WooCommerce and JavaScript  
-**Project stage:** Pre-launch
+**My role:** Website implementation, catalogue configuration and handover documentation  
+**Stack:** WordPress, Elementor, WooCommerce and JavaScript
 
-## The website workflow
+## What I built
 
-Visitors can explore the company and its products, then collect material selections for a quotation enquiry. The owner editing guide explains how to maintain the site's pages and catalogue.
+- Company pages and shared Elementor templates.
+- A WooCommerce product catalogue.
+- Browser-local quotation selections transferred into an enquiry form.
+- Editing instructions for pages, products, images and form settings.
 
-## My contribution
+## Implementation decisions
 
-- Configured company pages and shared Elementor templates.
-- Set up the WooCommerce product catalogue.
-- Built browser-local quotation selections that transfer into the enquiry form.
-- Prepared editing instructions for pages, products, images and form settings.
+Shared templates provide a consistent structure across pages. The quotation interaction carries selected products into the enquiry form, connecting catalogue browsing with the customer's request.
 
-## Implementation focus
+The editing guide explains how the site's visible content maps to WordPress settings. It gives the owner a practical route to maintaining pages and products.
 
-Shared templates provide a consistent structure across the site. The quotation interaction carries selected products into the enquiry form, while the editing guide connects the finished interface to the settings the owner uses to maintain it.
-
-The scope highlighted here is website configuration, catalogue interaction and documentation.
+**Demonstrated capabilities:** WordPress implementation, catalogue configuration, JavaScript interactions and documentation for nontechnical users.
 
 [Back to portfolio](../README.md)

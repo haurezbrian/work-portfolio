@@ -6,6 +6,10 @@ A workforce application connecting time entry, supporting proof and approvals wi
 **Development period:** April 2025–June 2026  
 **Stack:** PHP, WordPress REST APIs and React
 
+![Weekly time entry, approval readiness and proof requirements](../assets/timesheet-week.png)
+
+*Application interface shown with sample records.*
+
 ## The business workflow
 
 Staff records need to move from time entry through submission and review. Timesheet Pro brings those steps together, with explicit approval states and checks for the supporting information needed to process a record.

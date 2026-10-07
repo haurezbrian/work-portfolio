@@ -1,26 +1,24 @@
-# Orvane staff workspace
+# Orvane Energy
 
-A staff application for managing solar projects from assessment and proposal preparation through delivery and installation handover.
+A staff workspace connecting solar assessments, design reviews, proposals, delivery planning and installation handover.
 
-**Role:** Full-stack development  
-**Stack:** React, Python/FastAPI, PostgreSQL, SQLAlchemy, Alembic, Keycloak and Docker Compose  
-**Project stage:** Pre-release
+**My role:** Full-stack development  
+**Stack:** React, Python/FastAPI, PostgreSQL, SQLAlchemy, Alembic, Keycloak and Docker Compose
 
-## The project workflow
+## What I built
 
-The workspace connects customer and project records with site assessments, equipment information, reviewed designs, proposals and handover documents.
+- Frontend interfaces and backend services for customer, staff and project workflows.
+- Site-assessment, equipment, proposal and installation-handover flows.
+- Authentication with role- and project-based access.
+- Document revision history, private evidence files and audit records.
+- Database models, migrations and API contracts connecting the application layers.
 
-## My contribution
+## Engineering decisions
 
-- Built frontend interfaces and backend services for staff and project workflows.
-- Implemented authenticated sessions with role- and project-based access.
-- Added revision history, private evidence files and audit records.
-- Worked with API contracts, database models and migrations.
+Access combines the signed-in identity with the user's role and project context. Revision history preserves changes to project information, while audit records make staff actions traceable.
 
-## Implementation focus
+The project record connects several stages of work, from early assessment through installation handover. The interfaces and services support that progression with structured records and controlled access.
 
-Project access combines the signed-in identity with the user's role and project context. Revision history and audit records make changes traceable across the workflow.
-
-This work brings together interface development, backend behaviour and permissions in an application with several connected stages. The installation and handover workflows extend the project record beyond assessment and proposals.
+**Demonstrated capabilities:** Full-stack development, API design, relational data modelling, identity integration and permission-aware workflows.
 
 [Back to portfolio](../README.md)

@@ -1,35 +1,56 @@
-# Brian Karanja
+# Brian Karanja — Software and Systems Portfolio
 
-**Software development · Systems administration · Application support**
+I build business applications and the systems that support them. My work combines frontend interfaces, backend services, databases, permissions, deployment and user support.
 
-I build business applications and support the teams that rely on them. My work spans workforce software, staff project workspaces, business websites and the accounts, devices and systems behind daily operations.
+**Full-Stack Developer · Systems Administrator · Nairobi, Kenya**
 
-## Project case studies
+[Email](mailto:haurezbrian@gmail.com) · [GitHub](https://github.com/haurezbrian)
 
-| Project | What I built | Technology |
+## Software projects
+
+| Project | Delivered functionality | Technical focus |
 | --- | --- | --- |
-| [Timesheet Pro](case-studies/timesheet-pro.md) | Time capture, supporting-proof checks and approval workflows | PHP, WordPress REST APIs, React |
-| [Orvane staff workspace](case-studies/orvane.md) | Project workflows from assessment and proposals through installation handover, with controlled access and audit records | React, FastAPI, PostgreSQL, Keycloak |
-| [Afri Roofing & Flooring](case-studies/wordpress-implementation.md) | Business pages, a product catalogue, quotation selections and an owner editing guide | WordPress, Elementor, WooCommerce, JavaScript |
+| [Timesheet Pro](case-studies/timesheet-pro.md) | Time capture, proof checks, approvals and payroll preparation | Workflow rules, PHP services, React interfaces |
+| [Orvane Energy](case-studies/orvane.md) | Staff workspace, solar assessments, proposals and handover | Full-stack workflows, permissions, audit history |
+| [Seraphim / Pemerton Realty](case-studies/seraphim.md) | Property search, comparison, maps and catalogue management | API integration, geospatial data, responsive interfaces |
+| [Dainty Divas](case-studies/dainty.md) | Storefront, cart, checkout, delivery and payment integration | Commerce APIs, payment states, end-to-end testing |
+| [Carnova](case-studies/carnova.md) | Travel discovery, trip planning and request intake | Connected frontend/backend workflows and notifications |
+| [Afri Roofing & Flooring](case-studies/wordpress-implementation.md) | Business website, product catalogue and quotation selections | WordPress configuration, JavaScript and owner handover |
 
-Each case study describes my contribution, implementation scope and project stage. Application source code is private.
+## Selected interfaces
 
-## Support and documentation
+### Seraphim / Pemerton property discovery
 
-At Rockhill Advisors, I supported remote customer-care and data-entry teams with Microsoft 365, accounts, devices and day-to-day troubleshooting. My email-support work included Outlook/server synchronisation issues, user creation, account resets and troubleshooting across Microsoft 365, Gmail/Google Calendar and Apple Mail/iCloud.
+![Property search and featured residences](assets/seraphim-home.png)
 
-[Calendar synchronisation troubleshooting guide](support/calendar-integration-scenario.md) — a practical reference covering investigation, customer communication, verification and escalation.
+[View the project](case-studies/seraphim.md)
 
-## Experience
+### Timesheet Pro weekly workflow
 
-- **Rockhill Advisors · System Administrator · 2021–September 2026:** Remote-team support, Microsoft administration and Timesheet Pro development. A hospitality engagement also included networking, CCTV and Oracle MICROS Simphony configuration.
-- **Panache Technohub · Junior Software Developer · 2021:** E-commerce development and Business Central customisation, testing and rollout support.
-- **Freelance web development and IT consulting · 2020–2021:** Business websites and practical IT support for SMEs.
+![Weekly time entry and supporting-proof requirements using sample records](assets/timesheet-week.png)
 
-Diploma in Software Engineering, Zetech University, 2017–2019.
+[View the project](case-studies/timesheet-pro.md)
+
+## Systems and implementation
+
+My infrastructure and support work includes Microsoft 365 and Windows Server administration, remote-team onboarding, email troubleshooting, hospitality networking, CCTV and Oracle MICROS Simphony configuration.
+
+At Panache Technohub, I also supported Microsoft Dynamics 365 Business Central customisation, testing and rollout.
+
+[Systems and implementation experience](case-studies/systems-and-implementation.md)
+
+## Development tooling
+
+I worked on a reusable project foundation with five setup profiles, Docker Compose templates, GitHub Actions and operating documentation. Its initializer includes localhost port-allocation checks, registry locking and atomic updates.
+
+[Development tooling](case-studies/development-tooling.md)
+
+## Technical writing
+
+[Calendar synchronisation troubleshooting](support/calendar-integration-scenario.md) — an operational reference for investigation, customer communication and verification.
+
+Application source remains in private repositories. These project pages describe the implemented work and my contribution.
 
 ## Contact
 
-Nairobi, Kenya · Open to opportunities in Kenya and remote teams hiring in Kenya.
-
-[haurezbrian@gmail.com](mailto:haurezbrian@gmail.com) · [GitHub profile](https://github.com/haurezbrian)
+[haurezbrian@gmail.com](mailto:haurezbrian@gmail.com) · Nairobi, Kenya
