@@ -1,32 +1,26 @@
-# WordPress website implementation
+# Afri Roofing and Flooring
 
-**Project:** Afri Roofing & Flooring.
+A WordPress business website with a product catalogue, quotation selections and documentation for the site owner.
 
-**My contribution:** WordPress implementation, catalogue configuration, quotation interaction and owner editing documentation.
+**Role:** Website implementation, catalogue configuration and owner handover documentation  
+**Stack:** WordPress, Elementor, WooCommerce and JavaScript  
+**Project stage:** Pre-launch
 
-**Technology:** WordPress, Elementor, WooCommerce and JavaScript.
+## The website workflow
 
-## The workflow
+Visitors can explore the company and its products, then collect material selections for a quotation enquiry. The owner editing guide explains how to maintain the site's pages and catalogue.
 
-The site presents the business and its product catalogue, then lets a visitor collect quotation selections for an enquiry. The handover also needs to let the owner update ordinary content without navigating application code.
+## My contribution
 
-## What I worked on
+- Configured company pages and shared Elementor templates.
+- Set up the WooCommerce product catalogue.
+- Built browser-local quotation selections that transfer into the enquiry form.
+- Prepared editing instructions for pages, products, images and form settings.
 
-- Company pages and shared Elementor templates.
-- WooCommerce catalogue configuration.
-- Browser-local quotation selections transferred to an enquiry form.
-- An editing guide covering pages, products, images and form settings.
+## Implementation focus
 
-## Why the documentation matters
+Shared templates provide a consistent structure across the site. The quotation interaction carries selected products into the enquiry form, while the editing guide connects the finished interface to the settings the owner uses to maintain it.
 
-An owner editing a product or replacing an image needs instructions that match the website's actual structure. The editing guide is part of the implementation: it explains where content lives and which settings affect a change.
-
-The quotation workflow also has separate stages. Preserving selections in the browser and passing them into a form does not establish that a submitted enquiry reaches the business. Those stages need separate verification.
-
-## Status and scope
-
-The installed website remains behind a Coming Soon screen. Payments, submitted enquiries and email delivery have not been validated. This is a pre-launch implementation, not a claim of live sales or successful enquiry delivery.
-
-This case study contains no customer enquiries, private administration links or application source.
+The scope highlighted here is website configuration, catalogue interaction and documentation.
 
 [Back to portfolio](../README.md)

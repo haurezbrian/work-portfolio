@@ -1,59 +1,60 @@
-# Investigating a calendar integration failure
+# Calendar synchronisation troubleshooting
 
-**Fictional worked scenario.** This is a support writing exercise, not a customer incident or a live Microsoft integration test. The observations below are invented inputs for reasoning; no successful fix is claimed.
+A practical guide to investigating a calendar that updates in the provider's web interface but fails to update in a connected application.
 
-## Report and supplied observations
+## 1. Establish the scope
 
-A customer reports: "New meetings appear in Outlook on the web, but they stopped appearing in our scheduling app this morning."
+Confirm the affected account and calendar, when the issue started, and the user's time zone. Ask whether older events remain visible, whether new events or edits are affected, and whether other accounts have the same problem.
 
-For this exercise, assume:
+Check the event in the provider's web interface. Compare the calendar, date range and filters with those selected in the connected application.
 
-- One connected work account is affected; another user's connection still updates.
-- The missing event appears in the intended calendar in Outlook on the web.
-- The scheduling app's latest calendar request returned HTTP 401.
-- The app shows a connection warning and has not completed a successful sync since that request.
+## 2. Locate the failing stage
 
-These observations narrow the investigation to the connection or application path. They do not establish why authentication failed or rule out every wider service issue.
+Use the application's connection status, last successful sync and available diagnostics to distinguish between:
 
-## Investigation plan
+- An account or calendar selection problem.
+- An authentication or permission failure.
+- A synchronisation problem after the connection succeeds.
+- An event that is present but hidden by the current view.
 
-1. Confirm the affected account, calendar, approximate start time and time zone. Ask whether older events remain visible and whether all new events are missing.
-2. Compare the calendar in the scheduling app with the one that contains the event in Outlook on the web. Confirm the app's date range and filters.
-3. Record the failed request's time, error code and available correlation identifier from approved diagnostics. Do not collect passwords, access tokens or meeting contents.
-4. Check the app's documented connection state and authentication error handling. A 401 indicates missing or invalid authentication information; it does not by itself prove that a password change or expired token caused the failure. [Microsoft Graph error reference](https://learn.microsoft.com/en-us/graph/errors)
-5. If the application provides a documented reconnect flow for this warning, explain the action and its effects before asking the customer to use it. Follow the application's supported process rather than deleting the connection or clearing local calendar data speculatively.
-6. If reconnection fails or the next sync still fails, retain the new error details and escalate the specific failure. For Microsoft Graph, an expired or invalid access token is one possible authentication problem; permission errors require a different investigation. [Microsoft authentication troubleshooting](https://learn.microsoft.com/en-us/graph/resolve-auth-errors)
+Record diagnostic timestamps and request identifiers. Keep passwords, tokens and meeting contents out of support notes.
 
-## Example customer reply
+## 3. Follow the error evidence
 
-> Thanks for checking that the meeting is visible in Outlook. The scheduling app is reporting a problem with its connection to your account. That gives us a useful next step, although we haven't yet confirmed the cause.
+For Microsoft Graph integrations, a **401** points to missing or invalid authentication information. Check the application's supported authentication flow and connection state. A **403** calls for checking permissions, consent, licensing or applicable access policies. Use the full error details to narrow the cause. [Microsoft Graph authentication troubleshooting](https://learn.microsoft.com/en-us/graph/resolve-auth-errors)
+
+If the application provides a reconnect flow for the observed error, explain what it changes and follow that documented process. Preserve unsynchronised information before any step that clears local data or removes an account.
+
+## 4. Keep the customer informed
+
+Explain what you have established, what you are checking next and what the customer needs to do.
+
+**Reply template for a confirmed connection warning:**
+
+> Thanks for confirming that the event appears in your web calendar. The connected app is reporting an account-connection warning, so our next step is to check that connection.
 >
-> Please confirm that the app lists the same account and calendar as Outlook. You don't need to send your password, meeting details or any security codes. I'll then guide you through the app's supported reconnect steps and check that a new test event appears before we consider the issue resolved.
+> Please confirm that the same account and calendar are selected in both places. I'll guide you through the app's reconnect process if needed, then check that a test event comes through and an update synchronises correctly.
 
-## Verification before closing
+## 5. Verify the complete workflow
 
-- Confirm the expected account and calendar are still selected after any supported reconnect.
-- Confirm that a subsequent sync completes successfully, using the app's documented status or diagnostics.
-- With the customer's agreement, create a non-sensitive test event and check that it appears within the app's documented sync interval.
-- Check an update as well as initial creation, and inspect a previously missing event for recovery or duplication.
-- Confirm the customer's original problem is resolved. A sign-in success alone is not proof of calendar synchronisation.
+After any change:
 
-## Escalation note template
+- Confirm the intended account and calendar remain selected.
+- Check that the app records a successful sync.
+- With the user's agreement, create a non-sensitive test event and check its arrival within the documented sync interval.
+- Update the event and check that the change also synchronises.
+- Review a previously missing event for recovery or duplication.
+- Confirm that the original issue is resolved before closing the request.
 
-**Impact:** Which account/calendar workflow is affected, without event contents.
+## 6. Escalate with a useful record
 
-**Timeline:** Last known success, first observed failure and diagnostic timestamps, with time zones.
-
-**Evidence:** Sanitised error code, request/correlation identifier, app version and connection status.
-
-**Checks completed:** Account/calendar selection, filters, source-calendar visibility and any supported reconnect attempted.
-
-**Result:** What changed, what still fails and whether a test event synchronised.
-
-**Request to engineering:** Investigate the failing authentication or sync stage using the supplied diagnostic identifiers.
-
-## Limits
-
-This exercise demonstrates a written investigation approach. It does not demonstrate hands-on Apple/iCloud experience, operation of a live OAuth integration or a measured support outcome.
+| Include | Detail |
+| --- | --- |
+| Impact | Affected account/calendar workflow and extent of disruption |
+| Timeline | Last known success, first failure and timestamps with time zones |
+| Diagnostics | Sanitised error code, request identifier, app version and connection status |
+| Checks | Account/calendar selection, filters, source visibility and supported reconnect steps |
+| Current result | What changed, what still fails and whether the test event synchronised |
+| Next action | The failing authentication or sync stage that needs engineering investigation |
 
 [Back to portfolio](../README.md)

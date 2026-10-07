@@ -1,30 +1,26 @@
 # Orvane staff workspace
 
-**My contribution:** Full-stack development.
+A staff application for managing solar projects from assessment and proposal preparation through delivery and installation handover.
 
-**Technology:** React, Python/FastAPI, PostgreSQL, SQLAlchemy, Alembic, Keycloak and Docker Compose.
+**Role:** Full-stack development  
+**Stack:** React, Python/FastAPI, PostgreSQL, SQLAlchemy, Alembic, Keycloak and Docker Compose  
+**Project stage:** Pre-release
 
-## The workflow
+## The project workflow
 
-The workspace connects customers and projects with solar assessments, equipment information, reviewed designs, proposals, delivery planning and installation handover. Staff work with a shared project record as the work moves through these stages.
+The workspace connects customer and project records with site assessments, equipment information, reviewed designs, proposals and handover documents.
 
-## What I worked on
+## My contribution
 
-- Frontend interfaces and backend services for staff and project workflows.
-- Authenticated sessions with role and project access controls.
-- Revision history, private evidence files and audit records.
-- API contracts connecting the interface to the underlying data and services.
+- Built frontend interfaces and backend services for staff and project workflows.
+- Implemented authenticated sessions with role- and project-based access.
+- Added revision history, private evidence files and audit records.
+- Worked with API contracts, database models and migrations.
 
-## What the project demonstrates
+## Implementation focus
 
-Access depends on both the signed-in identity and the project context. Revision history and audit records make changes inspectable. These are useful foundations for explaining why a user can see a particular record or why a workflow displays a particular state.
+Project access combines the signed-in identity with the user's role and project context. Revision history and audit records make changes traceable across the workflow.
 
-An investigation would compare the user's expected action with their account, project membership and the API response, then use available audit evidence to understand changes. That is a proposed diagnostic path; this summary does not claim a particular production support incident.
-
-## Status and scope
-
-The project status dated 3 October 2026 records deployment of installation and handover workflows. Human acceptance testing and production qualification remain open, and the operational ERP connection is pending. The project is presented as pre-release work, without claims about active customers or production scale.
-
-This public case study contains no staff records, private project files, deployment details or application source.
+This work brings together interface development, backend behaviour and permissions in an application with several connected stages. The installation and handover workflows extend the project record beyond assessment and proposals.
 
 [Back to portfolio](../README.md)

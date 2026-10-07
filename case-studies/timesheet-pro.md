@@ -1,30 +1,28 @@
 # Timesheet Pro
 
-**My contribution:** Design and development within my System Administrator role at Rockhill Advisors. Development period: April 2025–June 2026.
+A workforce application connecting time entry, supporting proof and approvals with payroll preparation.
 
-**Technology:** PHP, WordPress REST APIs and React.
+**Role:** Design and development at Rockhill Advisors  
+**Development period:** April 2025–June 2026  
+**Stack:** PHP, WordPress REST APIs and React
 
-## The workflow
+## The business workflow
 
-The application brings time capture, submission, supporting proof and approval into a shared workforce workflow. This connects the information entered by staff with the checks needed before records move onward for payroll preparation.
+Staff records need to move from time entry through submission and review. Timesheet Pro brings those steps together, with explicit approval states and checks for the supporting information needed to process a record.
 
-## What I worked on
+## My contribution
 
-- Weekly timesheet records and time calculations.
-- Submission and approval state transitions.
-- Proof requirements associated with timesheet processing.
-- Interfaces and backend services connecting these steps within the wider workforce application.
+- Developed weekly timesheet records and time calculations.
+- Built submission and approval state transitions.
+- Added supporting-proof requirements and checks that prevent approved timesheets from being resubmitted.
+- Connected frontend interfaces to the backend services that handle the workflow.
 
-The broader project also covers scheduling, contracts, credentials and reporting. The weekly-record service is the concrete implementation example highlighted here.
+The wider application also covers scheduling, contracts, credentials and reporting.
 
-## Why this matters for application support
+## Implementation focus
 
-A timesheet question can involve the entered data, the current workflow state or a submission requirement. The application gives those questions a specific context rather than treating every blocked action as the same problem.
+The weekly-record service makes the rules for each stage explicit: the record's current state, its supporting proof and whether it can move to the next step. This connects the user-facing action with the business rules enforced by the application.
 
-For an investigation, I would establish which weekly record is affected, which transition the user expected, and whether the required supporting information is present. I would separate a rule preventing submission from an unexpected application failure before proposing a change. This describes an investigation approach, not a recorded customer incident.
-
-## Status and scope
-
-The private implementation includes weekly records, state transitions, proof requirements and time calculations. This public summary does not establish current live availability, user counts or measured time savings. It contains no staff timesheets, payroll information or source code.
+The project combines my software development and systems administration experience: building the workflow while understanding the accounts, access and everyday support needs around it.
 
 [Back to portfolio](../README.md)

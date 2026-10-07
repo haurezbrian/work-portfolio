@@ -1,30 +1,35 @@
-# Brian Karanja work portfolio
+# Brian Karanja
 
-I build business applications and support the systems and people behind daily operations. This portfolio brings together selected development work and a support writing example.
+**Software development · Systems administration · Application support**
 
-**Nairobi, Kenya · Software development · Systems administration · Application support**
+I build business applications and support the teams that rely on them. My work spans workforce software, staff project workspaces, business websites and the accounts, devices and systems behind daily operations.
 
-## Explore the work
+## Project case studies
 
-| Example | Focus | Status |
+| Project | What I built | Technology |
 | --- | --- | --- |
-| [Timesheet Pro](case-studies/timesheet-pro.md) | Time capture, submission rules and approval workflows with PHP, WordPress REST APIs and React | Developed within my Rockhill role; this summary does not claim current live availability or adoption figures |
-| [Orvane staff workspace](case-studies/orvane.md) | Authenticated project workflows using React, FastAPI, PostgreSQL and Keycloak | Pre-release; acceptance testing and production qualification remain open |
-| [WordPress implementation](case-studies/wordpress-implementation.md) | Elementor, WooCommerce, quotation selections and site-owner documentation | Pre-launch; payment and enquiry delivery are not validated |
-| [Calendar integration support scenario](support/calendar-integration-scenario.md) | Investigation, a customer reply, verification criteria and escalation notes | Fictional practice scenario; no live integration test or customer incident |
+| [Timesheet Pro](case-studies/timesheet-pro.md) | Time capture, supporting-proof checks and approval workflows | PHP, WordPress REST APIs, React |
+| [Orvane staff workspace](case-studies/orvane.md) | Project workflows from assessment and proposals through installation handover, with controlled access and audit records | React, FastAPI, PostgreSQL, Keycloak |
+| [Afri Roofing & Flooring](case-studies/wordpress-implementation.md) | Business pages, a product catalogue, quotation selections and an owner editing guide | WordPress, Elementor, WooCommerce, JavaScript |
 
-## Professional background
+Each case study describes my contribution, implementation scope and project stage. Application source code is private.
 
-At Rockhill Advisors, I worked as a System Administrator from 2021 to September 2026. I supported remote teams with onboarding, accounts, Microsoft administration, devices and troubleshooting, alongside development of Timesheet Pro. A hospitality engagement included networking, NVR-based CCTV and Oracle MICROS Simphony configuration.
+## Support and documentation
 
-Previously, I worked as a Junior Software Developer at Panache Technohub, building an e-commerce platform and assisting with Business Central customisation, testing and rollout support. My earlier experience includes freelance web development, customer care and an IT internship.
+At Rockhill Advisors, I supported remote customer-care and data-entry teams with Microsoft 365, accounts, devices and day-to-day troubleshooting. My email-support work included Outlook/server synchronisation issues, user creation, account resets and troubleshooting across Microsoft 365, Gmail/Google Calendar and Apple Mail/iCloud.
 
-## About these examples
+[Calendar synchronisation troubleshooting guide](support/calendar-integration-scenario.md) — a practical reference covering investigation, customer communication, verification and escalation.
 
-The case studies describe my contribution and the relevant implementation scope. They contain no application source, customer records or credentials. They are documentation examples, so there is no application to install or run from this repository. The support exercise is explicitly fictional and separate from my employment experience.
+## Experience
 
-Project status reflects the portfolio review on 7 October 2026. A local release, staging result or pre-launch implementation is not presented as a public production service.
+- **Rockhill Advisors · System Administrator · 2021–September 2026:** Remote-team support, Microsoft administration and Timesheet Pro development. A hospitality engagement also included networking, CCTV and Oracle MICROS Simphony configuration.
+- **Panache Technohub · Junior Software Developer · 2021:** E-commerce development and Business Central customisation, testing and rollout support.
+- **Freelance web development and IT consulting · 2020–2021:** Business websites and practical IT support for SMEs.
+
+Diploma in Software Engineering, Zetech University, 2017–2019.
 
 ## Contact
+
+Nairobi, Kenya · Open to opportunities in Kenya and remote teams hiring in Kenya.
 
 [haurezbrian@gmail.com](mailto:haurezbrian@gmail.com) · [GitHub profile](https://github.com/haurezbrian)
